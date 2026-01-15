@@ -9,23 +9,23 @@ Monday Morning
 
 Fixed threshold splits:
   Threshold: 1.0 min
-    P(Drink): 0.248
-    Mean Drink: 1.00 min
-    Mean Food: 2.70 min
-    Separation: 1.70 min
+    P(Drink): 0.146
+    Mean Drink: 0.64 min
+    Mean Food: 2.56 min
+    Separation: 1.92 min
     Overlap coeff: 0.000
 
   Threshold: 1.5 min
-    P(Drink): 0.248
-    Mean Drink: 1.00 min
-    Mean Food: 2.70 min
-    Separation: 1.70 min
+    P(Drink): 0.262
+    Mean Drink: 0.92 min
+    Mean Food: 2.77 min
+    Separation: 1.85 min
     Overlap coeff: 0.000
 
   Threshold: 2.0 min
-    P(Drink): 0.604
-    Mean Drink: 1.59 min
-    Mean Food: 3.33 min
+    P(Drink): 0.379
+    Mean Drink: 1.21 min
+    Mean Food: 2.94 min
     Separation: 1.73 min
     Overlap coeff: 0.000
 
@@ -35,24 +35,24 @@ Monday Afternoon
 
 Fixed threshold splits:
   Threshold: 1.0 min
-    P(Drink): 0.557
-    Mean Drink: 1.00 min
-    Mean Food: 2.36 min
+    P(Drink): 0.303
+    Mean Drink: 0.56 min
+    Mean Food: 1.91 min
     Separation: 1.36 min
     Overlap coeff: 0.000
 
   Threshold: 1.5 min
-    P(Drink): 0.557
-    Mean Drink: 1.00 min
-    Mean Food: 2.36 min
-    Separation: 1.36 min
+    P(Drink): 0.586
+    Mean Drink: 0.86 min
+    Mean Food: 2.41 min
+    Separation: 1.54 min
     Overlap coeff: 0.000
 
   Threshold: 2.0 min
-    P(Drink): 0.875
-    Mean Drink: 1.36 min
-    Mean Food: 3.27 min
-    Separation: 1.91 min
+    P(Drink): 0.747
+    Mean Drink: 1.07 min
+    Mean Food: 2.78 min
+    Separation: 1.71 min
     Overlap coeff: 0.000
 
 
@@ -61,24 +61,24 @@ Monday Evening
 
 Fixed threshold splits:
   Threshold: 1.0 min
-    P(Drink): 0.528
-    Mean Drink: 1.00 min
-    Mean Food: 2.24 min
-    Separation: 1.24 min
+    P(Drink): 0.211
+    Mean Drink: 0.64 min
+    Mean Food: 1.89 min
+    Separation: 1.25 min
     Overlap coeff: 0.000
 
   Threshold: 1.5 min
-    P(Drink): 0.528
-    Mean Drink: 1.00 min
+    P(Drink): 0.509
+    Mean Drink: 1.03 min
     Mean Food: 2.24 min
-    Separation: 1.24 min
+    Separation: 1.21 min
     Overlap coeff: 0.000
 
   Threshold: 2.0 min
-    P(Drink): 0.887
-    Mean Drink: 1.40 min
-    Mean Food: 3.00 min
-    Separation: 1.60 min
+    P(Drink): 0.702
+    Mean Drink: 1.23 min
+    Mean Food: 2.56 min
+    Separation: 1.34 min
     Overlap coeff: 0.000
 
 
@@ -86,69 +86,34 @@ Tuesday Morning
 ----------------------------------------
 
 Fixed threshold splits:
-  Threshold: 1.0 min
-    P(Drink): 0.867
-    Mean Drink: 1.00 min
-    Mean Food: 2.00 min
-    Separation: 1.00 min
-    Overlap coeff: 0.000
-
-  Threshold: 1.5 min
-    P(Drink): 0.867
-    Mean Drink: 1.00 min
-    Mean Food: 2.00 min
-    Separation: 1.00 min
-    Overlap coeff: 0.000
-
 
 Tuesday Afternoon
 ----------------------------------------
 
 Fixed threshold splits:
-  Threshold: 1.0 min
-    P(Drink): 0.724
-    Mean Drink: 1.00 min
-    Mean Food: 2.12 min
-    Separation: 1.12 min
-    Overlap coeff: 0.000
-
-  Threshold: 1.5 min
-    P(Drink): 0.724
-    Mean Drink: 1.00 min
-    Mean Food: 2.12 min
-    Separation: 1.12 min
-    Overlap coeff: 0.000
-
-  Threshold: 2.0 min
-    P(Drink): 0.966
-    Mean Drink: 1.25 min
-    Mean Food: 3.00 min
-    Separation: 1.75 min
-    Overlap coeff: 0.000
-
 
 Tuesday Evening
 ----------------------------------------
 
 Fixed threshold splits:
   Threshold: 1.0 min
-    P(Drink): 0.362
-    Mean Drink: 1.00 min
-    Mean Food: 2.49 min
-    Separation: 1.49 min
+    P(Drink): 0.086
+    Mean Drink: 0.86 min
+    Mean Food: 2.26 min
+    Separation: 1.40 min
     Overlap coeff: 0.000
 
   Threshold: 1.5 min
-    P(Drink): 0.362
-    Mean Drink: 1.00 min
-    Mean Food: 2.49 min
-    Separation: 1.49 min
+    P(Drink): 0.328
+    Mean Drink: 1.18 min
+    Mean Food: 2.61 min
+    Separation: 1.44 min
     Overlap coeff: 0.000
 
   Threshold: 2.0 min
-    P(Drink): 0.810
-    Mean Drink: 1.55 min
-    Mean Food: 3.64 min
-    Separation: 2.08 min
+    P(Drink): 0.483
+    Mean Drink: 1.37 min
+    Mean Food: 2.87 min
+    Separation: 1.50 min
     Overlap coeff: 0.000
 
