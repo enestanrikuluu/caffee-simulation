@@ -1,0 +1,454 @@
+====================================================================================================
+DISTRIBUTION FITTING REPORT
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Morning - Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 101
+Sample Mean: 2.2772
+Sample Std:  1.0012
+Sample Range: [1.0000, 5.0000]
+
+RECOMMENDED: GAMMA
+Reason: Rank #1 by AIC (281.54), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      gamma           281.54     286.77     0.0005       0.0000       5.192     
+       Parameters: shape=4.9201, scale=0.4628
+2      weibull         282.11     287.34     0.0012       0.0000       4.504     
+       Parameters: shape=2.4688, scale=2.5749
+3      uniform         284.03     289.26     0.0000       0.0000       143.441   
+       Parameters: a=1.0000, b=5.0000
+4      lognormal       284.96     290.20     0.0000       0.0000       6.025     
+       Parameters: shape=0.4743, scale=2.0501
+5      normal          289.87     295.10     0.0002       0.0000       4.590     
+       Parameters: mu=2.2772, sigma=1.0012
+6      exponential     370.24     372.85     0.0000       0.0000       16.003    
+       Parameters: rate=0.4391
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Morning - Interarrival Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 59
+Sample Mean: 1.6780
+Sample Std:  1.0738
+Sample Range: [1.0000, 6.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (133.50), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       133.50     137.66     0.0000       N/A          7.266     
+       Parameters: shape=0.4993, scale=1.4522
+2      gamma           145.00     149.15     0.0000       N/A          7.207     
+       Parameters: shape=3.6180, scale=0.4638
+3      weibull         155.91     160.07     0.0000       N/A          6.646     
+       Parameters: shape=1.7500, scale=1.9039
+4      normal          178.84     183.00     0.0000       N/A          7.584     
+       Parameters: mu=1.6780, sigma=1.0738
+5      exponential     181.07     183.15     0.0000       N/A          9.689     
+       Parameters: rate=0.5960
+6      uniform         193.91     198.07     0.0000       0.0000       467.763   
+       Parameters: a=1.0000, b=6.0000
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Morning - Food Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 76
+Sample Mean: 2.6974
+Sample Std:  0.7835
+Sample Range: [2.0000, 5.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (166.45), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       166.45     171.11     0.0000       0.0000       7.400     
+       Parameters: shape=0.2714, scale=2.5962
+2      gamma           170.24     174.90     0.0000       0.0000       7.158     
+       Parameters: shape=13.2479, scale=0.2036
+3      uniform         170.99     175.65     0.0000       0.0000       376.459   
+       Parameters: a=2.0000, b=5.0000
+4      normal          181.59     186.25     0.0000       0.0000       6.830     
+       Parameters: mu=2.6974, sigma=0.7835
+5      weibull         183.99     188.65     0.0000       0.0000       6.345     
+       Parameters: shape=3.5735, scale=2.9892
+6      exponential     304.83     307.16     0.0000       N/A          20.077    
+       Parameters: rate=0.3707
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Afternoon - Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 88
+Sample Mean: 1.6023
+Sample Std:  0.7957
+Sample Range: [1.0000, 4.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (173.64), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       173.64     178.60     0.0000       0.0000       10.621    
+       Parameters: shape=0.4392, scale=1.4444
+2      gamma           183.04     187.99     0.0000       0.0000       10.165    
+       Parameters: shape=4.9803, scale=0.3217
+3      weibull         196.54     201.50     0.0000       0.0000       8.951     
+       Parameters: shape=2.1725, scale=1.8200
+4      uniform         197.36     202.31     0.0000       0.0000       600.459   
+       Parameters: a=1.0000, b=4.0000
+5      normal          212.51     217.46     0.0000       0.0000       9.631     
+       Parameters: mu=1.6023, sigma=0.7957
+6      exponential     260.97     263.45     0.0000       N/A          16.095    
+       Parameters: rate=0.6241
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Afternoon - Drink Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 49
+Sample Mean: 1.0000
+Sample Std:  0.0000
+Sample Range: [1.0000, 1.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (-3771.90), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       -3771.90   -3768.11   0.0000       N/A          18.928    
+       Parameters: shape=0.0000, scale=1.0000
+2      weibull         -2032.52   -2028.74   0.0000       N/A          21.179    
+       Parameters: shape=2886523556.1939, scale=1.0000
+3      gamma           -17.95     -14.17     0.0000       N/A          19.277    
+       Parameters: shape=10.0000, scale=0.1000
+4      exponential     100.00     101.89     0.0000       N/A          22.475    
+       Parameters: rate=1.0000
+5      normal          nan        nan        N/A          N/A          nan       
+       Parameters: mu=1.0000, sigma=0.0000
+6      uniform         nan        nan        N/A          N/A          nan       
+       Parameters: a=1.0000, b=1.0000
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Afternoon - Food Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 39
+Sample Mean: 2.3590
+Sample Std:  0.6277
+Sample Range: [2.0000, 4.0000]
+
+RECOMMENDED: UNIFORM
+Reason: Rank #1 by AIC (58.07), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      uniform         58.07      61.39      0.0000       0.0000       440.283   
+       Parameters: a=2.0000, b=4.0000
+2      lognormal       64.12      67.45      0.0000       N/A          7.451     
+       Parameters: shape=0.2281, scale=2.2925
+3      gamma           68.16      71.48      0.0000       N/A          7.377     
+       Parameters: shape=17.6547, scale=0.1336
+4      normal          77.36      80.69      0.0000       N/A          7.147     
+       Parameters: mu=2.3590, sigma=0.6277
+5      weibull         80.91      84.23      0.0000       N/A          6.532     
+       Parameters: shape=3.7177, scale=2.6010
+6      exponential     146.94     148.61     0.0000       N/A          12.208    
+       Parameters: rate=0.4239
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Evening - Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 53
+Sample Mean: 1.5849
+Sample Std:  0.6915
+Sample Range: [1.0000, 3.0000]
+
+RECOMMENDED: UNIFORM
+Reason: Rank #1 by AIC (77.47), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      uniform         77.47      81.41      0.0000       0.0000       329.589   
+       Parameters: a=1.0000, b=3.0000
+2      lognormal       99.97      103.91     0.0000       0.0000       6.640     
+       Parameters: shape=0.4121, scale=1.4519
+3      gamma           103.18     107.12     0.0000       0.0000       6.367     
+       Parameters: shape=5.8650, scale=0.2702
+4      weibull         108.72     112.66     0.0000       0.0000       5.625     
+       Parameters: shape=2.4959, scale=1.7952
+5      normal          114.31     118.25     0.0000       0.0000       5.903     
+       Parameters: mu=1.5849, sigma=0.6915
+6      exponential     156.82     158.79     0.0000       N/A          10.341    
+       Parameters: rate=0.6310
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Monday Evening - Interarrival Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 31
+Sample Mean: 1.8710
+Sample Std:  1.1759
+Sample Range: [1.0000, 5.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (82.55), K-S test marginal (p=0.002)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       82.55      85.42      0.0021       N/A          2.886     
+       Parameters: shape=0.5373, scale=1.5987
+2      gamma           86.79      89.66      0.0029       N/A          2.813     
+       Parameters: shape=3.3367, scale=0.5607
+3      uniform         89.95      92.82      0.0000       0.0000       184.361   
+       Parameters: a=1.0000, b=5.0000
+4      weibull         90.76      93.63      0.0104       N/A          2.576     
+       Parameters: shape=1.7712, scale=2.1224
+5      normal          101.02     103.89     0.0095       N/A          2.962     
+       Parameters: mu=1.8710, sigma=1.1759
+6      exponential     102.84     104.27     0.0000       N/A          4.156     
+       Parameters: rate=0.5345
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Morning - Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 83
+Sample Mean: 1.1325
+Sample Std:  0.3411
+Sample Range: [1.0000, 2.0000]
+
+RECOMMENDED: UNIFORM
+Reason: Rank #1 by AIC (4.00), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      uniform         4.00       8.84       0.0000       0.0000       1388.713  
+       Parameters: a=1.0000, b=2.0000
+2      lognormal       14.41      19.25      0.0000       0.0000       25.566    
+       Parameters: shape=0.2350, scale=1.0962
+3      gamma           29.05      33.89      0.0000       0.0000       25.621    
+       Parameters: shape=15.5063, scale=0.0730
+4      normal          60.01      64.85      0.0000       0.0000       25.459    
+       Parameters: mu=1.1325, sigma=0.3411
+5      weibull         65.37      70.21      0.0000       0.0000       23.048    
+       Parameters: shape=3.1979, scale=1.2580
+6      exponential     188.66     191.08     0.0000       N/A          28.759    
+       Parameters: rate=0.8830
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Morning - Interarrival Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 59
+Sample Mean: 1.3729
+Sample Std:  0.8489
+Sample Range: [1.0000, 6.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (88.35), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       88.35      92.51      0.0000       N/A          11.594    
+       Parameters: shape=0.3995, scale=1.2380
+2      gamma           105.66     109.82     0.0000       N/A          11.326    
+       Parameters: shape=4.9941, scale=0.2749
+3      weibull         125.97     130.12     0.0000       N/A          10.468    
+       Parameters: shape=1.8144, scale=1.5569
+4      normal          151.10     155.26     0.0000       N/A          11.181    
+       Parameters: mu=1.3729, sigma=0.8489
+5      exponential     157.40     159.47     0.0000       N/A          14.323    
+       Parameters: rate=0.7284
+6      uniform         193.91     198.07     0.0000       0.0000       733.342   
+       Parameters: a=1.0000, b=6.0000
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Morning - Drink Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 72
+Sample Mean: 1.0000
+Sample Std:  0.0000
+Sample Range: [1.0000, 1.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (-5544.26), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       -5544.26   -5539.71   0.0000       N/A          27.813    
+       Parameters: shape=0.0000, scale=1.0000
+2      weibull         -2988.44   -2983.89   0.0000       N/A          31.121    
+       Parameters: shape=2886523556.1939, scale=1.0000
+3      gamma           -28.26     -23.71     0.0000       N/A          28.325    
+       Parameters: shape=10.0000, scale=0.1000
+4      exponential     146.00     148.28     0.0000       N/A          33.025    
+       Parameters: rate=1.0000
+5      normal          nan        nan        N/A          N/A          nan       
+       Parameters: mu=1.0000, sigma=0.0000
+6      uniform         nan        nan        N/A          N/A          nan       
+       Parameters: a=1.0000, b=1.0000
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Afternoon - Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 87
+Sample Mean: 1.3103
+Sample Std:  0.5351
+Sample Range: [1.0000, 3.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (98.80), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       98.80      103.73     0.0000       0.0000       18.069    
+       Parameters: shape=0.3398, scale=1.2278
+2      gamma           111.09     116.03     0.0000       0.0000       17.783    
+       Parameters: shape=7.8439, scale=0.1671
+3      uniform         124.61     129.54     0.0000       0.0000       994.949   
+       Parameters: a=1.0000, b=3.0000
+4      weibull         132.96     137.89     0.0000       0.0000       15.448    
+       Parameters: shape=2.5651, scale=1.4792
+5      normal          141.08     146.01     0.0000       0.0000       16.952    
+       Parameters: mu=1.3103, sigma=0.5351
+6      exponential     223.03     225.50     0.0000       N/A          22.488    
+       Parameters: rate=0.7632
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Afternoon - Interarrival Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 51
+Sample Mean: 1.2941
+Sample Std:  0.4602
+Sample Range: [1.0000, 2.0000]
+
+RECOMMENDED: UNIFORM
+Reason: Rank #1 by AIC (4.00), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      uniform         4.00       7.86       0.0000       0.0000       635.712   
+       Parameters: a=1.0000, b=2.0000
+2      lognormal       51.97      55.83      0.0000       0.0000       11.249    
+       Parameters: shape=0.3158, scale=1.2261
+3      gamma           56.89      60.76      0.0000       0.0000       11.260    
+       Parameters: shape=9.4293, scale=0.1372
+4      weibull         66.39      70.25      0.0000       0.0000       10.255    
+       Parameters: shape=3.0205, scale=1.4532
+5      normal          68.57      72.43      0.0000       0.0000       11.095    
+       Parameters: mu=1.2941, sigma=0.4602
+6      exponential     130.30     132.23     0.0000       N/A          13.695    
+       Parameters: rate=0.7727
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Afternoon - Drink Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 63
+Sample Mean: 1.0000
+Sample Std:  0.0000
+Sample Range: [1.0000, 1.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (-4850.73), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       -4850.73   -4846.44   0.0000       N/A          24.337    
+       Parameters: shape=0.0000, scale=1.0000
+2      weibull         -2614.39   -2610.10   0.0000       N/A          27.231    
+       Parameters: shape=2886523556.1939, scale=1.0000
+3      gamma           -24.23     -19.94     0.0000       N/A          24.784    
+       Parameters: shape=10.0000, scale=0.1000
+4      exponential     128.00     130.14     0.0000       N/A          28.897    
+       Parameters: rate=1.0000
+5      normal          nan        nan        N/A          N/A          nan       
+       Parameters: mu=1.0000, sigma=0.0000
+6      uniform         nan        nan        N/A          N/A          nan       
+       Parameters: a=1.0000, b=1.0000
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Evening - Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 58
+Sample Mean: 1.9483
+Sample Std:  1.0500
+Sample Range: [1.0000, 6.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (145.86), K-S test marginal (p=0.001)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       145.86     149.98     0.0007       N/A          4.461     
+       Parameters: shape=0.4749, scale=1.7309
+2      gamma           150.88     155.00     0.0045       N/A          4.173     
+       Parameters: shape=4.3863, scale=0.4442
+3      weibull         159.81     163.93     0.0010       N/A          4.054     
+       Parameters: shape=2.0043, scale=2.2101
+4      normal          173.26     177.38     0.0001       0.0000       4.625     
+       Parameters: mu=1.9483, sigma=1.0500
+5      uniform         190.69     194.82     0.0000       0.0000       186.296   
+       Parameters: a=1.0000, b=6.0000
+6      exponential     195.37     197.43     0.0000       N/A          9.381     
+       Parameters: rate=0.5133
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Evening - Interarrival Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 40
+Sample Mean: 1.7750
+Sample Std:  1.0739
+Sample Range: [1.0000, 5.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (97.48), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       97.48      100.86     0.0002       N/A          3.945     
+       Parameters: shape=0.5049, scale=1.5418
+2      gamma           103.31     106.69     0.0004       N/A          3.837     
+       Parameters: shape=3.7079, scale=0.4787
+3      weibull         109.50     112.87     0.0025       N/A          3.538     
+       Parameters: shape=1.8314, scale=2.0156
+4      uniform         114.90     118.28     0.0000       0.0000       247.122   
+       Parameters: a=1.0000, b=5.0000
+5      normal          122.22     125.59     0.0018       N/A          4.038     
+       Parameters: mu=1.7750, sigma=1.0739
+6      exponential     127.90     129.59     0.0000       N/A          6.001     
+       Parameters: rate=0.5634
+
+----------------------------------------------------------------------------------------------------
+VARIABLE: Tuesday Evening - Food Service Time
+----------------------------------------------------------------------------------------------------
+Sample Size: 37
+Sample Mean: 2.4865
+Sample Std:  0.9609
+Sample Range: [2.0000, 6.0000]
+
+RECOMMENDED: LOGNORMAL
+Reason: Rank #1 by AIC (81.74), K-S test marginal (p=0.000)
+
+Rank   Distribution    AIC        BIC        K-S p-val    Chi² p-val   A-D stat  
+----------------------------------------------------------------------------------------------------
+1      lognormal       81.74      84.96      0.0000       N/A          6.391     
+       Parameters: shape=0.2927, scale=2.3632
+2      gamma           88.68      91.90      0.0000       N/A          6.444     
+       Parameters: shape=9.9997, scale=0.2487
+3      weibull         102.95     106.18     0.0001       N/A          6.218     
+       Parameters: shape=2.6092, scale=2.7933
+4      normal          105.05     108.28     0.0000       N/A          6.625     
+       Parameters: mu=2.4865, sigma=0.9609
+5      uniform         106.59     109.81     0.0000       0.0000       404.554   
+       Parameters: a=2.0000, b=6.0000
+6      exponential     143.40     145.02     0.0000       N/A          10.460    
+       Parameters: rate=0.4022
+
+====================================================================================================
+INTERPRETATION GUIDE
+====================================================================================================
+AIC/BIC: Lower is better (penalizes model complexity)
+K-S p-value: >0.05 indicates good fit (fail to reject H₀)
+Chi² p-value: >0.05 indicates good fit (fail to reject H₀)
+Anderson-Darling: Statistic < critical value indicates good fit
+Rank: Based on AIC (1 = best fit)
