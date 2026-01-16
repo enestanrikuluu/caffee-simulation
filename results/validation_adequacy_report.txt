@@ -8,60 +8,60 @@ Periods Passed: 0/6
 --------------------------------------------------------------------------------
 Monday Morning
 --------------------------------------------------------------------------------
-Validation Adequacy: FAIL (1/3 tests passed)
+Validation Adequacy: FAIL (0/3 tests passed)
 
-✗ Mean Agreement (mean_wait_min): Inadequate: |0.081 - 1.772| = 1.692 > 0.500 (obs not in CI [0.069, 0.092])
-✓ Throughput Match (throughput): Adequate: |96.6 - 101| / 101 = 0.043 ≤ 0.050
-✗ ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.703 > 0.150
+x Mean Agreement (mean_wait_min): Inadequate: |0.114 - 1.815| = 1.702 > 0.500 (obs not in CI [0.096, 0.131])
+x Throughput Match (throughput): Inadequate: |113.6 - 103| / 103 = 0.103 > 0.050
+x ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.757 > 0.150
 
 --------------------------------------------------------------------------------
 Monday Afternoon
 --------------------------------------------------------------------------------
 Validation Adequacy: FAIL (0/3 tests passed)
 
-✗ Mean Agreement (mean_wait_min): Inadequate: |0.000 - 1.943| = 1.943 > 0.500 (obs not in CI [-0.000, 0.001])
-✗ Throughput Match (throughput): Inadequate: |42.3 - 88| / 88 = 0.519 > 0.050
-✗ ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.886 > 0.150
+x Mean Agreement (mean_wait_min): Inadequate: |0.000 - 1.897| = 1.897 > 0.500 (obs not in CI [-0.000, 0.000])
+x Throughput Match (throughput): Inadequate: |62.1 - 103| / 103 = 0.397 > 0.050
+x ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.961 > 0.150
 
 --------------------------------------------------------------------------------
 Monday Evening
 --------------------------------------------------------------------------------
 Validation Adequacy: FAIL (0/3 tests passed)
 
-✗ Mean Agreement (mean_wait_min): Inadequate: |0.161 - 0.887| = 0.726 > 0.500 (obs not in CI [0.139, 0.183])
-✗ Throughput Match (throughput): Inadequate: |63.3 - 53| / 53 = 0.195 > 0.050
-✗ ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.698 > 0.150
+x Mean Agreement (mean_wait_min): Inadequate: |0.150 - 1.124| = 0.974 > 0.500 (obs not in CI [0.121, 0.178])
+x Throughput Match (throughput): Inadequate: |69.6 - 57| / 57 = 0.222 > 0.050
+x ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.702 > 0.150
 
 --------------------------------------------------------------------------------
 Tuesday Morning
 --------------------------------------------------------------------------------
 Validation Adequacy: FAIL (1/3 tests passed)
 
-✗ Mean Agreement (mean_wait_min): Inadequate: |5.634 - 0.614| = 5.020 > 0.500 (obs not in CI [5.057, 6.211])
-✓ Throughput Match (throughput): Adequate: |82.7 - 83| / 83 = 0.004 ≤ 0.050
-✗ ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 1.000 > 0.150
+x Mean Agreement (mean_wait_min): Inadequate: |4.390 - 0.888| = 3.503 > 0.500 (obs not in CI [3.704, 5.077])
++ Throughput Match (throughput): Adequate: |101.9 - 99| / 99 = 0.029 <= 0.050
+x ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.929 > 0.150
 
 --------------------------------------------------------------------------------
 Tuesday Afternoon
 --------------------------------------------------------------------------------
 Validation Adequacy: FAIL (0/3 tests passed)
 
-✗ Mean Agreement (mean_wait_min): Inadequate: |0.046 - 0.839| = 0.793 > 0.500 (obs not in CI [0.038, 0.054])
-✗ Throughput Match (throughput): Inadequate: |71.8 - 87| / 87 = 0.175 > 0.050
-✗ ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.678 > 0.150
+x Mean Agreement (mean_wait_min): Inadequate: |0.052 - 1.094| = 1.041 > 0.500 (obs not in CI [0.043, 0.062])
+x Throughput Match (throughput): Inadequate: |91.3 - 99| / 99 = 0.078 > 0.050
+x ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.889 > 0.150
 
 --------------------------------------------------------------------------------
 Tuesday Evening
 --------------------------------------------------------------------------------
-Validation Adequacy: FAIL (1/3 tests passed)
+Validation Adequacy: FAIL (0/3 tests passed)
 
-✓ Mean Agreement (mean_wait_min): Adequate: |1.021 - 0.776| = 0.245 ≤ 0.500
-✗ Throughput Match (throughput): Inadequate: |67.8 - 58| / 58 = 0.170 > 0.050
-✗ ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.431 > 0.150
+x Mean Agreement (mean_wait_min): Inadequate: |1.486 - 0.899| = 0.587 > 0.500 (obs not in CI [1.088, 1.885])
+x Throughput Match (throughput): Inadequate: |77.0 - 58| / 58 = 0.328 > 0.050
+x ECDF Agreement (wait_time_ecdf): Inadequate: max ECDF deviation = 0.310 > 0.150
 
 ================================================================================
 ADEQUACY THRESHOLDS
 ================================================================================
-Mean Wait Tolerance: ±0.5 min
-ECDF Max Deviation: ≤0.15
-Throughput Tolerance: ±5.0%
+Mean Wait Tolerance: +/-0.5 min
+ECDF Max Deviation: <=0.15
+Throughput Tolerance: +/-5.0%

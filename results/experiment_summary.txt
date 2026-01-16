@@ -1,92 +1,92 @@
-Café Simulation Experiment Results
+Cafe Simulation Experiment Results
 ================================================================================
 
 1. VALIDATION RESULTS
 --------------------------------------------------------------------------------
 
 Monday Morning:
-  mean_wait_min                 :    0.081 [  0.069,   0.092]
+  mean_wait_min                 :    0.114 [  0.096,   0.131]
   median_wait_min               :    0.000 [  0.000,   0.000]
-  p90_wait_min                  :    0.274 [  0.215,   0.333]
-  p95_wait_min                  :    0.557 [  0.486,   0.628]
-  time_avg_queue_length         :    0.082 [  0.070,   0.095]
-  utilization_per_barista       :    0.729 [  0.718,   0.740]
-  p_wait_exceeds_2min           :    0.000 [ -0.000,   0.001]
-  throughput                    :   96.633 [ 96.404,  96.863]
+  p90_wait_min                  :    0.442 [  0.370,   0.515]
+  p95_wait_min                  :    0.722 [  0.632,   0.812]
+  time_avg_queue_length         :    0.113 [  0.095,   0.131]
+  utilization_per_barista       :    0.751 [  0.739,   0.763]
+  p_wait_exceeds_2min           :    0.001 [ -0.000,   0.003]
+  throughput                    :  113.567 [113.246, 113.887]
 
 Monday Afternoon:
-  mean_wait_min                 :    0.000 [ -0.000,   0.001]
+  mean_wait_min                 :    0.000 [ -0.000,   0.000]
   median_wait_min               :    0.000 [  0.000,   0.000]
   p90_wait_min                  :    0.000 [  0.000,   0.000]
   p95_wait_min                  :    0.000 [  0.000,   0.000]
-  time_avg_queue_length         :    0.000 [ -0.000,   0.001]
-  utilization_per_barista       :    0.390 [  0.381,   0.398]
+  time_avg_queue_length         :    0.000 [ -0.000,   0.000]
+  utilization_per_barista       :    0.362 [  0.353,   0.370]
   p_wait_exceeds_2min           :    0.000 [  0.000,   0.000]
-  throughput                    :   42.333 [ 42.129,  42.537]
+  throughput                    :   62.133 [ 61.844,  62.423]
 
 Monday Evening:
-  mean_wait_min                 :    0.161 [  0.139,   0.183]
-  median_wait_min               :    0.003 [ -0.003,   0.009]
-  p90_wait_min                  :    0.574 [  0.508,   0.639]
-  p95_wait_min                  :    0.808 [  0.727,   0.889]
-  time_avg_queue_length         :    0.162 [  0.142,   0.183]
-  utilization_per_barista       :    0.778 [  0.764,   0.792]
-  p_wait_exceeds_2min           :    0.001 [ -0.001,   0.002]
-  throughput                    :   63.333 [ 63.087,  63.580]
+  mean_wait_min                 :    0.150 [  0.121,   0.178]
+  median_wait_min               :    0.000 [  0.000,   0.000]
+  p90_wait_min                  :    0.540 [  0.445,   0.634]
+  p95_wait_min                  :    0.818 [  0.712,   0.923]
+  time_avg_queue_length         :    0.151 [  0.122,   0.179]
+  utilization_per_barista       :    0.722 [  0.705,   0.739]
+  p_wait_exceeds_2min           :    0.003 [ -0.001,   0.006]
+  throughput                    :   69.633 [ 69.273,  69.993]
 
 Tuesday Morning:
-  mean_wait_min                 :    5.634 [  5.057,   6.211]
-  median_wait_min               :    5.486 [  4.788,   6.185]
-  p90_wait_min                  :   10.008 [  9.086,  10.930]
-  p95_wait_min                  :   10.649 [  9.739,  11.559]
-  time_avg_queue_length         :    5.701 [  5.148,   6.253]
-  utilization_per_barista       :    0.991 [  0.990,   0.992]
-  p_wait_exceeds_2min           :    0.810 [  0.760,   0.860]
-  throughput                    :   82.667 [ 81.761,  83.573]
+  mean_wait_min                 :    4.390 [  3.704,   5.077]
+  median_wait_min               :    4.211 [  3.487,   4.935]
+  p90_wait_min                  :    7.719 [  6.634,   8.804]
+  p95_wait_min                  :    8.322 [  7.198,   9.446]
+  time_avg_queue_length         :    4.410 [  3.728,   5.091]
+  utilization_per_barista       :    0.980 [  0.974,   0.986]
+  p_wait_exceeds_2min           :    0.739 [  0.673,   0.804]
+  throughput                    :  101.867 [100.186, 103.547]
 
 Tuesday Afternoon:
-  mean_wait_min                 :    0.046 [  0.038,   0.054]
+  mean_wait_min                 :    0.052 [  0.043,   0.062]
   median_wait_min               :    0.000 [  0.000,   0.000]
-  p90_wait_min                  :    0.122 [  0.080,   0.163]
-  p95_wait_min                  :    0.327 [  0.270,   0.384]
-  time_avg_queue_length         :    0.045 [  0.038,   0.053]
-  utilization_per_barista       :    0.650 [  0.639,   0.660]
-  p_wait_exceeds_2min           :    0.000 [  0.000,   0.000]
-  throughput                    :   71.800 [ 71.648,  71.952]
+  p90_wait_min                  :    0.143 [  0.094,   0.192]
+  p95_wait_min                  :    0.378 [  0.302,   0.454]
+  time_avg_queue_length         :    0.052 [  0.043,   0.062]
+  utilization_per_barista       :    0.606 [  0.595,   0.616]
+  p_wait_exceeds_2min           :    0.000 [ -0.000,   0.001]
+  throughput                    :   91.267 [ 91.028,  91.506]
 
 Tuesday Evening:
-  mean_wait_min                 :    1.021 [  0.823,   1.219]
-  median_wait_min               :    0.803 [  0.565,   1.040]
-  p90_wait_min                  :    2.415 [  2.070,   2.759]
-  p95_wait_min                  :    2.786 [  2.435,   3.136]
-  time_avg_queue_length         :    1.039 [  0.840,   1.238]
-  utilization_per_barista       :    0.923 [  0.911,   0.936]
-  p_wait_exceeds_2min           :    0.196 [  0.131,   0.261]
-  throughput                    :   67.833 [ 67.126,  68.541]
+  mean_wait_min                 :    1.486 [  1.088,   1.885]
+  median_wait_min               :    1.251 [  0.797,   1.705]
+  p90_wait_min                  :    3.243 [  2.600,   3.886]
+  p95_wait_min                  :    3.676 [  3.030,   4.323]
+  time_avg_queue_length         :    1.500 [  1.114,   1.887]
+  utilization_per_barista       :    0.927 [  0.915,   0.939]
+  p_wait_exceeds_2min           :    0.283 [  0.194,   0.372]
+  throughput                    :   77.000 [ 76.293,  77.707]
 
 
 2. STAFFING SWEEP (Monday Afternoon)
 --------------------------------------------------------------------------------
 
 m = 3 baristas:
-  mean_wait_min                 :    0.005 [  0.002,   0.008]
+  mean_wait_min                 :    0.005 [  0.003,   0.007]
   median_wait_min               :    0.000 [  0.000,   0.000]
   p90_wait_min                  :    0.000 [  0.000,   0.000]
-  p95_wait_min                  :    0.007 [ -0.005,   0.019]
-  time_avg_queue_length         :    0.005 [  0.002,   0.008]
-  utilization_per_barista       :    0.520 [  0.508,   0.531]
+  p95_wait_min                  :    0.005 [ -0.005,   0.015]
+  time_avg_queue_length         :    0.005 [  0.002,   0.007]
+  utilization_per_barista       :    0.482 [  0.470,   0.494]
   p_wait_exceeds_2min           :    0.000 [  0.000,   0.000]
-  throughput                    :   42.333 [ 42.129,  42.537]
+  throughput                    :   62.133 [ 61.844,  62.423]
 
 m = 4 baristas:
-  mean_wait_min                 :    0.000 [ -0.000,   0.001]
+  mean_wait_min                 :    0.000 [ -0.000,   0.000]
   median_wait_min               :    0.000 [  0.000,   0.000]
   p90_wait_min                  :    0.000 [  0.000,   0.000]
   p95_wait_min                  :    0.000 [  0.000,   0.000]
-  time_avg_queue_length         :    0.000 [ -0.000,   0.001]
-  utilization_per_barista       :    0.390 [  0.381,   0.398]
+  time_avg_queue_length         :    0.000 [ -0.000,   0.000]
+  utilization_per_barista       :    0.362 [  0.353,   0.370]
   p_wait_exceeds_2min           :    0.000 [  0.000,   0.000]
-  throughput                    :   42.333 [ 42.129,  42.537]
+  throughput                    :   62.133 [ 61.844,  62.423]
 
 m = 5 baristas:
   mean_wait_min                 :    0.000 [  0.000,   0.000]
@@ -94,6 +94,6 @@ m = 5 baristas:
   p90_wait_min                  :    0.000 [  0.000,   0.000]
   p95_wait_min                  :    0.000 [  0.000,   0.000]
   time_avg_queue_length         :    0.000 [  0.000,   0.000]
-  utilization_per_barista       :    0.312 [  0.305,   0.318]
+  utilization_per_barista       :    0.289 [  0.282,   0.296]
   p_wait_exceeds_2min           :    0.000 [  0.000,   0.000]
-  throughput                    :   42.333 [ 42.129,  42.537]
+  throughput                    :   62.133 [ 61.844,  62.423]

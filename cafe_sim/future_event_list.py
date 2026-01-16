@@ -1,30 +1,36 @@
 import heapq
-from typing import List, Optional
-from cafe_sim.event_definitions import Event
+from cafe_sim.event_definitions import event_sort_key
 
 
-class FutureEventList:
-    def __init__(self):
-        self._heap: List[Event] = []
-        self._counter = 0
+def create_event_list():
+    return {
+        'heap': [],
+        'counter': 0,
+    }
 
-    def push(self, event: Event) -> None:
-        self._counter += 1
-        event.sequence_number = self._counter
-        heapq.heappush(self._heap, event)
 
-    def pop_next(self) -> Optional[Event]:
-        if len(self._heap) == 0:
-            return None
-        return heapq.heappop(self._heap)
+def push_event(fel, event):
+    fel['counter'] += 1
+    event['sequence_number'] = fel['counter']
+    heapq.heappush(fel['heap'], (event_sort_key(event), event))
 
-    def is_empty(self) -> bool:
-        return len(self._heap) == 0
 
-    def peek_next_time(self) -> Optional[float]:
-        if len(self._heap) == 0:
-            return None
-        return self._heap[0].time_min
+def pop_next_event(fel):
+    if len(fel['heap']) == 0:
+        return None
+    _, event = heapq.heappop(fel['heap'])
+    return event
 
-    def size(self) -> int:
-        return len(self._heap)
+
+def is_event_list_empty(fel):
+    return len(fel['heap']) == 0
+
+
+def peek_next_time(fel):
+    if len(fel['heap']) == 0:
+        return None
+    return fel['heap'][0][1]['time_min']
+
+
+def event_list_size(fel):
+    return len(fel['heap'])

@@ -1,66 +1,102 @@
-from dataclasses import dataclass, field
-from typing import Dict, List, Optional
-from cafe_sim.period_key import PeriodKey
+def create_period_calibration(
+    period_key,
+    run_length_min,
+    barista_count,
+    arrival_rate_per_hour,
+    poisson_lambda_per_minute,
+    p_drink,
+    empirical_interarrivals_min,
+    empirical_service_drink_min,
+    empirical_service_food_min
+):
+    return {
+        'period_key': period_key,
+        'run_length_min': run_length_min,
+        'barista_count': barista_count,
+        'arrival_rate_per_hour': arrival_rate_per_hour,
+        'poisson_lambda_per_minute': poisson_lambda_per_minute,
+        'p_drink': p_drink,
+        'empirical_interarrivals_min': empirical_interarrivals_min,
+        'empirical_service_drink_min': empirical_service_drink_min,
+        'empirical_service_food_min': empirical_service_food_min,
+    }
 
 
-@dataclass
-class PeriodCalibration:
-    period_key: PeriodKey
-    run_length_min: float
-    barista_count: int
-    arrival_rate_per_hour: float
-    poisson_lambda_per_minute: float
-    p_drink: float
-    empirical_interarrivals_min: List[float]
-    empirical_service_drink_min: List[float]
-    empirical_service_food_min: List[float]
+def create_simulation_config(
+    warmup_min=0.0,
+    initial_queue_size=0,
+    initial_busy_baristas=0,
+    arrival_model_type="poisson"
+):
+    return {
+        'warmup_min': warmup_min,
+        'initial_queue_size': initial_queue_size,
+        'initial_busy_baristas': initial_busy_baristas,
+        'arrival_model_type': arrival_model_type,
+    }
 
 
-@dataclass
-class SimulationConfig:
-    warmup_min: float = 0.0
-    initial_queue_size: int = 0
-    initial_busy_baristas: int = 0
-    arrival_model_type: str = "poisson"
+def create_experiment_definition(
+    name,
+    period_key,
+    barista_count,
+    simulation_config,
+    run_length_min,
+    replication_count,
+    p_drink_perturbation=0.0,
+    rng_seed=None
+):
+    return {
+        'name': name,
+        'period_key': period_key,
+        'barista_count': barista_count,
+        'simulation_config': simulation_config,
+        'run_length_min': run_length_min,
+        'replication_count': replication_count,
+        'p_drink_perturbation': p_drink_perturbation,
+        'rng_seed': rng_seed,
+    }
 
 
-@dataclass
-class ExperimentDefinition:
-    name: str
-    period_key: PeriodKey
-    barista_count: int
-    simulation_config: SimulationConfig
-    run_length_min: float
-    replication_count: int
-    p_drink_perturbation: float = 0.0
-    rng_seed: Optional[int] = None
+def create_confidence_interval(mean, std, lower, upper, alpha, sample_size):
+    return {
+        'mean': mean,
+        'std': std,
+        'lower': lower,
+        'upper': upper,
+        'alpha': alpha,
+        'sample_size': sample_size,
+    }
 
 
-@dataclass
-class ConfidenceInterval:
-    mean: float
-    std: float
-    lower: float
-    upper: float
-    alpha: float
-    sample_size: int
+def create_kpi_set(
+    mean_wait_min,
+    median_wait_min,
+    p90_wait_min,
+    p95_wait_min,
+    mean_queue_length,
+    time_avg_queue_length,
+    utilization_per_barista,
+    p_wait_exceeds_2min,
+    throughput,
+    mean_system_time_min=0.0
+):
+    return {
+        'mean_wait_min': mean_wait_min,
+        'median_wait_min': median_wait_min,
+        'p90_wait_min': p90_wait_min,
+        'p95_wait_min': p95_wait_min,
+        'mean_queue_length': mean_queue_length,
+        'time_avg_queue_length': time_avg_queue_length,
+        'utilization_per_barista': utilization_per_barista,
+        'p_wait_exceeds_2min': p_wait_exceeds_2min,
+        'throughput': throughput,
+        'mean_system_time_min': mean_system_time_min,
+    }
 
 
-@dataclass
-class KPISet:
-    mean_wait_min: float
-    median_wait_min: float
-    p90_wait_min: float
-    p95_wait_min: float
-    mean_queue_length: float
-    time_avg_queue_length: float
-    utilization_per_barista: float
-    p_wait_exceeds_2min: float
-    throughput: int
-    mean_system_time_min: float = 0.0
-
-
-@dataclass
-class AggregatedKPIs:
-    full_period: Dict[str, ConfidenceInterval] = field(default_factory=dict)
-    post_warmup: Dict[str, ConfidenceInterval] = field(default_factory=dict)
+def create_aggregated_kpis(full_period=None, post_warmup=None):
+    return {
+        'full_period': full_period if full_period is not None else {},
+        'post_warmup': post_warmup if post_warmup is not None else {},
+    }

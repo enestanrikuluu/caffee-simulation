@@ -1,12 +1,11 @@
-from enum import Enum
+DRINK = "drink"
+DRINK_AND_FOOD = "drink_and_food"
+
+ALL_SERVICE_TYPES = [DRINK, DRINK_AND_FOOD]
 
 
-class ServiceType(Enum):
-    DRINK = "drink"
-    DRINK_AND_FOOD = "drink_and_food"
-
-    def to_display_name(self) -> str:
-        if self == ServiceType.DRINK:
-            return "Drink"
-        else:
-            return "Drink + Food"
+def service_type_to_display_name(service_type):
+    if service_type == DRINK:
+        return "Drink"
+    else:
+        return "Drink + Food"

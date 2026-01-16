@@ -1,25 +1,29 @@
-from dataclasses import dataclass, field
-from enum import Enum
-from typing import Any
+EVENT_TYPE_ARRIVAL = "arrival"
+EVENT_TYPE_SERVICE_END = "service_end"
+EVENT_TYPE_END_OF_RUN = "end_of_run"
+
+_event_sequence_counter = 0
 
 
-class EventType(Enum):
-    ARRIVAL = "arrival"
-    SERVICE_END = "service_end"
-    END_OF_RUN = "end_of_run"
+def create_event(time_min, event_type, entity_id, data=None, sequence_number=None):
+    global _event_sequence_counter
+    if sequence_number is None:
+        _event_sequence_counter += 1
+        sequence_number = _event_sequence_counter
+
+    return {
+        'time_min': time_min,
+        'event_type': event_type,
+        'entity_id': entity_id,
+        'data': data,
+        'sequence_number': sequence_number,
+    }
 
 
-@dataclass(order=True)
-class Event:
-    time_min: float
-    event_type: EventType = field(compare=False)
-    entity_id: int = field(compare=False)
-    data: Any = field(default=None, compare=False)
-    sequence_number: int = field(default=0)
+def reset_event_sequence():
+    global _event_sequence_counter
+    _event_sequence_counter = 0
 
-    def __post_init__(self):
-        if not hasattr(self, '_seq_counter'):
-            Event._seq_counter = 0
-        if self.sequence_number == 0:
-            Event._seq_counter += 1
-            self.sequence_number = Event._seq_counter
+
+def event_sort_key(event):
+    return (event['time_min'], event['sequence_number'])
